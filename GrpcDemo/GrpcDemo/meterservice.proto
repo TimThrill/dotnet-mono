@@ -1,9 +1,9 @@
-syntax = "proto3"; // Define the protocol buffer version
+﻿syntax = "proto3"; // Define the protocol buffer version
 
 option csharp_namespace = "GrpcDemo.Grpc";
 
 // Import a timestamp package from Google
-import "google/protobuf/Timestamp";
+import "google/protobuf/timestamp.proto";
 
 service MeterReadingService {
     rpc AddReading (ReadingMessage) returns (StatusMessage);
@@ -34,4 +34,4 @@ enum ReadingStatus {
     Unknown = 0;
     Success = 1;
     Failure = 2;
-}
+}jjj
